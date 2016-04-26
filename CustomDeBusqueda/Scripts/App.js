@@ -26,6 +26,7 @@ $(document).ready(function () {
     clientContext.load(currentItem);
     clientContext.executeQueryAsync(onListLoadSucceeded, onRequestFailed);
 });
+//hola
 
 function onListLoadSucceeded() {
     title = currentItem.get_fieldValues().Name;
