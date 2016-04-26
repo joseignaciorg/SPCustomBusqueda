@@ -27,7 +27,7 @@ $(document).ready(function () {
     clientContext.executeQueryAsync(onListLoadSucceeded, onRequestFailed);
 });
 //hola
-
+     
 function onListLoadSucceeded() {
     title = currentItem.get_fieldValues().Name;
     getSearchResults(title);
