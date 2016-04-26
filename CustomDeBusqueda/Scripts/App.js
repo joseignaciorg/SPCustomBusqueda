@@ -26,8 +26,7 @@ $(document).ready(function () {
     clientContext.load(currentItem);
     clientContext.executeQueryAsync(onListLoadSucceeded, onRequestFailed);
 });
-
-     
+  
 function onListLoadSucceeded() {
     title = currentItem.get_fieldValues().Name;
     getSearchResults(title);
@@ -36,7 +35,6 @@ function onListLoadSucceeded() {
 function onRequestFailed(sender,args) {
     alert('Error:' + args.get_message());
 }
-
 
 //Función para realizar la búsqueda en la lista por el nombre del documento y carga la información en una capa
 function DoSearch() {
@@ -101,7 +99,6 @@ function GetAppSiteUrl() {
 function GetItemId() {
     return getQueryStringParameter("ItemID");
 }
-
 
 
 //'use strict';
